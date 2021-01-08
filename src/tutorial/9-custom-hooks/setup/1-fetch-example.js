@@ -7,8 +7,9 @@ const url = 'https://course-api.com/javascript-store-products'
 
 const Example = () => {
   const fetched = useFetch(url)
+  // not sure if key will work, added after I shut down
   const items = fetched.products.map(product=>{
-    return(<li>{product.fields.name}</li>)
+    return(<li key={product.id}>{product.fields.name}</li>)
   })
   return (
     <div>

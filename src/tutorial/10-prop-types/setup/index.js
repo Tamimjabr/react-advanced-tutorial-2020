@@ -8,6 +8,8 @@ const url = 'https://course-api.com/react-prop-types-example'
 
 const Index = () => {
   const { products } = useFetch(url)
+
+  //* {...product} pass all the property in the object
   return (
     <div>
       <h2>products</h2>
