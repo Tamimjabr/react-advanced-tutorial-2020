@@ -19,6 +19,7 @@ const PropDrilling = () => {
 };
 
 const List = ({ people, removePerson }) => {
+  //* {...person} means add all properties in  this case id and name
   return (
     <>
       {people.map((person) => {

@@ -4,10 +4,11 @@ import { data } from '../../../data';
 // reducer function
 
 const defaultState={
-  people:[],
+  people:data,
   isModalOpen:false,
   modalContent:''
 }
+// ! put the reducer in a seperate file as in final folder
 const reducer = (state, action)=>{
   if(action.type ==='ADD_ITEM'){
     const newPeople=[...state.people, action.payload ]
